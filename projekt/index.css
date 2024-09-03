@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 500px;
+}
+
+/* Styling för navbar */
+.navbar {
+    background-color: #0D0221;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #C2E7D9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling för boxar */
+.box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px;
+}
+
+/* Grid layout för boxarna */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default till en kolumn på små skärmar */
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr 1fr; /* Två kolumner för skärmar bredare än 600px */
+    }
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr; /* Tre kolumner för skärmar bredare än 900px */
+    }
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    color: #666;
+}
+
+/* Titlar */
+.titlar {
+    margin-top: 60px;
+    scroll-margin-top: 140px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Extra spacing ovanför första titeln */
+.spacing {
+    width: 100%;
+    height: 50px;
+}
+
+
+.iconsize {
+    width: 50px;
+    height: 50px;
+    align-items: end;
+    margin-left: auto;
+ 
+}
+
+
+.bookmarknav {
+    list-style-type: none;
+    margin-top: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrera listan horisontellt */
+    padding: 20px;
+    background-color: #0F084B;
+    position: fixed;
+    border: 0px solid #ccc;
+    border-bottom-right-radius: 20px;
+}
+
+.navigeringbookmarks {
+    color: #C2E7D9;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Lite padding runt länkarna för att göra dem klickbara */
+    font-size: 20px;
+    
+
+}
+
+.navigeringbookmarks:hover {
+    color: grey; /* Ändra färg på länken vid hover (valfritt) */
+}
+
+.bookmarknavright {
+    list-style-type: none;
+    margin: 0; /* Ta bort marginaler */
+    padding: 0;
+    display: flex;
+    align-items: center; /* Vertikalt centrera listobjekten */
+    justify-content: center; /* Centrera listan horisontellt */
+    padding: 20px; /* Utrymme runt menyn */
+    background-color: #0F084B; /* Bakgrundsfärg */
+    position: fixed; /* Fixera menyn på skärmen */
+    right: 0; /* Placera menyn på höger sida */
+    top: 60px; /* Justera höjd från toppen */
+    border-bottom-left-radius: 20px; /* Rundade hörn på nedre högra hörnet */
+    border: 0px solid #ccc; /* Valfri ram, kan tas bort om inte nödvändig */
+}
